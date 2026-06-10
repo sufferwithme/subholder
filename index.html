@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto text-center py-20">
+    <h1 class="text-5xl font-bold text-gray-900 mb-6">Управляйте подписками<br>проще, чем когда-либо</h1>
+    <p class="text-xl text-gray-500 mb-8">Никогда не пропускайте платежи и контролируйте свои расходы</p>
+    <div class="flex gap-4 justify-center">
+        <a href="{{ url_for('login') }}" class="px-6 py-3 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700">Войти</a>
+        <a href="{{ url_for('register') }}" class="px-6 py-3 border border-gray-300 rounded-lg font-medium hover:bg-gray-50">Регистрация</a>
+    </div>
+</div>
+{% endblock %}
